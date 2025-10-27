@@ -4,7 +4,7 @@ Welcome to the warm-up assignment for CSE 510! This assignment will help you get
 
 ## 🎯 Assignment Overview
 
-You'll build a web service that:
+Built a web service that:
 - Fetches text from Project Gutenberg URLs
 - Cleans and preprocesses the text
 - Provides statistical analysis
@@ -12,28 +12,60 @@ You'll build a web service that:
 
 ## 🚀 Quick Start
 
-### 1. Environment Setup
+1.  **Launch Codespace**
+    Click the green "Code" button on this repository's main page. Go to the "Codespaces" tab and click the **+** icon to create a new codespace on the `main` branch. (It will take 2-3 minutes to set up).
 
-First, test your environment:
-```bash
-python test_setup.py
+2.  **Environment Setup**
+    Once the Codespace loads, a terminal will be open at the bottom. First, test the environment:
+    ```bash
+    python test_setup.py
+    ```
+    ## PART 1 DELIVERABLE: Screenshot of successful output:
+    ![Successful Setup](images/test_setup_success.png)
+    If all tests pass, you're ready to go! If not, install any missing packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the Application**
+    Start the Flask development server in the terminal:
+    ```bash
+    python app.py
+    ```
+    Your application is now running. A pop-up will appear in the bottom-right corner. Click **"Open in Browser"** to open the web interface or if running locally, go to port 5000 `http://localhost:5000`
+
+4.  **Test the App**
+    Use the existing URL examples provided on the page, or paste in any other `.txt` file URL from Project Gutenberg to test the application.
+
+
+## 🚀 PART 2 DELIVERABLE: Updated preprocess.py file
+```
+preprocess.py
 ```
 
-If all tests pass, you're ready to go! If not, install missing packages:
-```bash
-pip install -r requirements.txt
-```
+## 🚀 PART 3 & 4 DELIVERABLES: Working Flask Application & HTML Interface Screenshots
 
-### 2. Run the Application
+Here is the application in action.
 
-Start the Flask development server:
-```bash
-python app.py
-```
+### 1. Landing/Home Page
+![Landing Page](images/1-landing.png)
 
-Open your browser to: http://localhost:5000
+### 2. Loading Analysis
+![Loading Page](images/2-loading.png)
 
-### 3. Test the Interface
+### 3. Book 1: Pride and Prejudice `https://www.gutenberg.org/files/1342/1342-0.txt`
+![Pride and Prejudice Analysis](images/3-book1.png)
+
+### 4. Book 2: Frankenstein `https://www.gutenberg.org/files/84/84-0.txt`
+![Frankenstein Analysis](images/4-book2.png)
+
+### 5. Book 3: Alice in Wonderland `https://www.gutenberg.org/files/11/11-0.txt`
+![Alice in Wonderland Analysis](images/5-book3.png)
+
+### 6. Book 4: Moby Dick `https://www.gutenberg.org/files/2701/2701-0.txt`
+![Moby Dick Analysis](images/6-book4.png)
+
+### Test the Interface
 
 The web interface includes example URLs you can click to test:
 - Pride and Prejudice by Jane Austen
